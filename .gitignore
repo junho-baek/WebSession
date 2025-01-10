@@ -1,0 +1,62 @@
+# Python 가상환경
+venv/
+env/
+ENV/
+.env
+
+# Python 캐시 파일
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+bin/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+.pytest_cache/
+
+# IDE 설정 파일
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 로그 파일
+*.log
+
+# 환경 변수 파일
+.env
+.env.local
+.env.*.local
+
+# 시스템 파일
+.DS_Store
+Thumbs.db
+
+# 데이터베이스
+*.sqlite3
+*.db
+
+# 임시 파일
+tmp/
+temp/
+
+# 커버리지 리포트
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover 
+
+BE/__pycache__/
