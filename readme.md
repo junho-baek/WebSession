@@ -438,6 +438,17 @@ async function createItem(item) {
 }
 ```
 
+### 5. HTTP 요청
+
+HTTP 요청은 클라이언트와 서버 간의 통신을 위한 프로토콜입니다.
+
+주요 HTTP 메서드:
+
+- GET: 데이터 조회
+- POST: 새로운 데이터 생성
+- PUT: 데이터 수정
+- DELETE: 데이터 삭제
+
 ---
 
 # Backend

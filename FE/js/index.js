@@ -30,32 +30,34 @@ loginForm.addEventListener("submit", async function (event) {
   const password = document.querySelector('input[type="password"]').value;
   const username = document.querySelector('input[type="text"]').value;
 
-  try {
-    const response = await fetch("http://localhost:8000/api/user/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email,
-        password,
-        username,
-      }),
-    });
-    //
-    const data = await response.json();
+  //   try {
+  //     const response = await fetch("http://localhost:8000/api/user/login", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         email,
+  //         password,
+  //         username,
+  //       }),
+  //     });
+  //     //
+  //     const data = await response.json();
 
-    if (response.ok) {
-      handleLoginSuccess(data.username);
-      // 로그인 성공 후 리다이렉트 또는 다른 처리
-    } else {
-      alert(data.detail);
-    }
-  } catch (error) {
-    console.error("로그인 에러:", error);
-    alert("로그인 처리 중 오류가 발생했습니다.");
-  }
-  //   handleLoginSuccess(username);
+  //     if (response.ok) {
+  //       handleLoginSuccess(data.username);
+  //       // 로그인 성공 후 리다이렉트 또는 다른 처리
+  //     } else {
+  //       alert(data.detail);
+  //     }
+  //   } catch (error) {
+  //     console.error("로그인 에러:", error);
+  //     alert("로그인 처리 중 오류가 발생했습니다.");
+  //   }
+
+  // 임의로 성공 처리
+  handleLoginSuccess(username);
 });
 
 // 개발용 콘솔 로그
